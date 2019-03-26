@@ -27,6 +27,8 @@ int main() {
     CC* pc = new CC();
     CA* pa = pc;
     CB* pb = pc;
+    CA* pa1 = new CA();
+    CB* pb1 = new CB();
     
     return 0;
 }
