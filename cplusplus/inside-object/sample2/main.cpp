@@ -20,15 +20,26 @@ public:
 };
 
 int main() {
+    // 空间占用
     cout << "sizeof CA : " << sizeof(CA) << endl;
-    cout << "sizeof CB : " << sizeof (CB) << endl;
+    cout << "sizeof CB : " << sizeof(CB) << endl;
     cout << "sizeof CC : " << sizeof(CC) << endl;
 
+    // 正确的向上类型转换
     CC* pc = new CC();
     CA* pa = pc;
     CB* pb = pc;
-    CA* pa1 = new CA();
-    CB* pb1 = new CB();
+
+    // 正确的向下转换
+    CC* pc1 = (CC*)pa;
+    CC* pc2 = (CC*)pb;
+
+    // 错误的转换
+    CA* pa1 = (CA*)pb;
+    CB* pb1 = (CB*)pa;
+    CB* pb2 = reinterpret_cast<CB*>(pc);
+
+    delete pc;
     
     return 0;
 }
