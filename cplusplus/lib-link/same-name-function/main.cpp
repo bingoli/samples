@@ -7,8 +7,8 @@ using namespace std;
 
 int main() {
     CA a; 
-    a.PrintA();
+    a.Print();
     CB b;
-    b.PrintB();
+    b.Print();
     return 0;
 }

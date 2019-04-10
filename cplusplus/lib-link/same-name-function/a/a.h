@@ -3,7 +3,9 @@
 
 class CA {
 public:
-    void PrintA();
+    void Print();
 };
+
+extern "C" void Print();
 
 #endif // _A_H_

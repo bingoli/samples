@@ -3,10 +3,26 @@
 #include <iostream>
 using namespace std;
 
-void Print() {
-    cout << "b.lib : Print()" << endl;
+class CPrint {
+public:
+    void Print() {
+        cout << "b.lib CPrint::Print" << endl;
+    }
+
+    void PrintB() {
+        cout << "b.lib CPrint::PrintB" << endl;
+    }
+};
+
+/*
+extern "C" void Print() {
+    cout << "b.lib Print()" << endl;
 }
-void CB::PrintB() {
-    cout << "CB::PrintB()" << endl;
-    Print();
+*/
+
+void CB::Print() {
+    cout << "b.lib CB::Print()" << endl;
+    CPrint print;
+    print.PrintB();
+    print.Print();
 }

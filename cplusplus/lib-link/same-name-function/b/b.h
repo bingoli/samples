@@ -3,7 +3,9 @@
 
 class CB {
 public:
-    void PrintB();
+    void Print();
 };
+
+extern "C" void Print();
 
 #endif // _B_H_
