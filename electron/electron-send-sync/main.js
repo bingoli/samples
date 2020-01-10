@@ -12,7 +12,9 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      // Add node support.
+      nodeIntegration: true
     }
   })
 
@@ -51,3 +53,43 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+const { ipcMain } = require('electron')
+
+ipcMain.on('sendSync', (event, arg) => {
+  console.log("receive sendSync")
+  setTimeout(function() {
+    event.returnValue = "onSendSync";
+  }, 5000)
+})
+
+ipcMain.on('deadLock', (event, arg) => {
+  console.log("receive deadLock")
+  setTimeout(function() {
+    event.reply('onDeadLock')
+  }, 5000)
+})
+
+ipcMain.on('send', (event, arg) => {
+  console.log("receive send")
+  setTimeout(function() {
+    event.reply('onSend')
+  }, 5000)
+})
+
+function sleep(delay) {
+  var start = (new Date()).getTime();
+  while ((new Date()).getTime() - start < delay) {
+    continue;
+  }
+}
+
+ipcMain.on('mainHang', (event, arg) => {
+  console.log("receive main hang")
+  sleep(5000)
+  event.reply('onMainHang')
+})
+
+ipcMain.on('openDevTools', (event, arg) => {
+  mainWindow.webContents.openDevTools()
+})
