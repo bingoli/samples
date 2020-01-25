@@ -4,51 +4,57 @@ using namespace std;
 
 class CBase {
 public:
-    CBase() {
-        cout << "CBase::CBase" << endl;
-        Init();
-    }
+  CBase() {
+    Init();
+  }
 
-    virtual ~CBase() {
-        Uninit();
-        cout << "CBase::~CBase" << endl;
-    };
+  virtual ~CBase() {
+    Uninit();
+  };
 
-    virtual void Init() {
-        cout << "CBase::Init" << endl;
-    }
+  virtual void Init() {
+    VFun();
+  }
 
-    virtual void Uninit() {
-        cout << "CBase::Uninit" << endl;
-    }
+  virtual void Uninit() {
+    cout << "CBase::Uninit" << endl;
+  }
 
-    int base_value = 0x1234;
+  virtual void VFun() {
+    cout << "CBase::VFun" << endl;
+  }
+
+  int base_value = 0x1234;
 };
 
 class CDerived : public CBase {
 public:
-    CDerived() {
-        cout << "CDerived::CDerived" << endl;
-    }
+  CDerived() {
+    Init();
+  }
 
-    virtual ~CDerived() {
-        cout << "CDerived::~CDerived" << endl;
-    }
+  virtual ~CDerived() {
+    Uninit();
+  }
 
-    virtual void Init() {
-        cout << "CDerived::Init" << endl;
-    }
+  virtual void Init() {
+    cout << "CDerived::Init" << endl;
+  }
 
-    virtual void Uninit() {
-        cout << "CDerived::Uninit" << endl;
-    }
+  virtual void Uninit() {
+    cout << "CDerived::Uninit" << endl;
+  }
 
-    int derived_value = 0x5678;
+  virtual void VFun() {
+    cout << "CDerived::Fun" << endl;
+  }
+
+  int derived_value = 0x5678;
 };
 
 int main() {
-    CDerived* derived = new CDerived();
-    delete derived;
-    derived = nullptr;
-    return 0;
+  CDerived* derived = new CDerived();
+  delete derived;
+  derived = nullptr;
+  return 0;
 }
