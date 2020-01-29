@@ -1,15 +1,15 @@
 //
-//  performanceTests.swift
-//  performanceTests
+//  performaceTests.swift
+//  performaceTests
 //
 //  Created by libin on 2020/1/29.
 //  Copyright © 2020 cn.bingoli. All rights reserved.
 //
 
 import XCTest
-@testable import performance
+@testable import performace
 
-class performanceTests: XCTestCase {
+class performaceTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
