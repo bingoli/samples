@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:performace.xcodeproj">
+      location = "self:/Users/libin/bingo/github/samples/ios/performace/performance.xcodeproj">
    </FileRef>
 </Workspace>

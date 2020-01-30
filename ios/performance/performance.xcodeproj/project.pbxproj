@@ -14,7 +14,8 @@
 		DA25DB8323E189A000AF5385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA25DB8223E189A000AF5385 /* Assets.xcassets */; };
 		DA25DB8623E189A000AF5385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA25DB8423E189A000AF5385 /* LaunchScreen.storyboard */; };
 		DA25DB9123E189A100AF5385 /* performaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DB9023E189A100AF5385 /* performaceTests.swift */; };
-		DA25DB9C23E189A100AF5385 /* performaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DB9B23E189A100AF5385 /* performaceUITests.swift */; };
+		DA25DB9C23E189A100AF5385 /* performanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DB9B23E189A100AF5385 /* performanceUITests.swift */; };
+		DA25DBAA23E1939700AF5385 /* RegularExpressionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA25DB7623E1899F00AF5385 /* performace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = performace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA25DB7623E1899F00AF5385 /* performance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = performance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA25DB7923E1899F00AF5385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA25DB7B23E1899F00AF5385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA25DB7D23E1899F00AF5385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +44,13 @@
 		DA25DB8223E189A000AF5385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA25DB8523E189A000AF5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA25DB8723E189A000AF5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA25DB8C23E189A100AF5385 /* performaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = performaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA25DB8C23E189A100AF5385 /* performanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = performanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA25DB9023E189A100AF5385 /* performaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performaceTests.swift; sourceTree = "<group>"; };
 		DA25DB9223E189A100AF5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA25DB9723E189A100AF5385 /* performaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = performaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA25DB9B23E189A100AF5385 /* performaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performaceUITests.swift; sourceTree = "<group>"; };
+		DA25DB9723E189A100AF5385 /* performanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = performanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA25DB9B23E189A100AF5385 /* performanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceUITests.swift; sourceTree = "<group>"; };
 		DA25DB9D23E189A100AF5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpressionTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				DA25DB7823E1899F00AF5385 /* performace */,
-				DA25DB8F23E189A100AF5385 /* performaceTests */,
-				DA25DB9A23E189A100AF5385 /* performaceUITests */,
+				DA25DB8F23E189A100AF5385 /* performanceTests */,
+				DA25DB9A23E189A100AF5385 /* performanceUITests */,
 				DA25DB7723E1899F00AF5385 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +91,9 @@
 		DA25DB7723E1899F00AF5385 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA25DB7623E1899F00AF5385 /* performace.app */,
-				DA25DB8C23E189A100AF5385 /* performaceTests.xctest */,
-				DA25DB9723E189A100AF5385 /* performaceUITests.xctest */,
+				DA25DB7623E1899F00AF5385 /* performance.app */,
+				DA25DB8C23E189A100AF5385 /* performanceTests.xctest */,
+				DA25DB9723E189A100AF5385 /* performanceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,34 +108,35 @@
 				DA25DB8223E189A000AF5385 /* Assets.xcassets */,
 				DA25DB8423E189A000AF5385 /* LaunchScreen.storyboard */,
 				DA25DB8723E189A000AF5385 /* Info.plist */,
+				DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */,
 			);
 			path = performace;
 			sourceTree = "<group>";
 		};
-		DA25DB8F23E189A100AF5385 /* performaceTests */ = {
+		DA25DB8F23E189A100AF5385 /* performanceTests */ = {
 			isa = PBXGroup;
 			children = (
 				DA25DB9023E189A100AF5385 /* performaceTests.swift */,
 				DA25DB9223E189A100AF5385 /* Info.plist */,
 			);
-			path = performaceTests;
+			path = performanceTests;
 			sourceTree = "<group>";
 		};
-		DA25DB9A23E189A100AF5385 /* performaceUITests */ = {
+		DA25DB9A23E189A100AF5385 /* performanceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DA25DB9B23E189A100AF5385 /* performaceUITests.swift */,
+				DA25DB9B23E189A100AF5385 /* performanceUITests.swift */,
 				DA25DB9D23E189A100AF5385 /* Info.plist */,
 			);
-			path = performaceUITests;
+			path = performanceUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA25DB7523E1899F00AF5385 /* performace */ = {
+		DA25DB7523E1899F00AF5385 /* performance */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA25DBA023E189A100AF5385 /* Build configuration list for PBXNativeTarget "performace" */;
+			buildConfigurationList = DA25DBA023E189A100AF5385 /* Build configuration list for PBXNativeTarget "performance" */;
 			buildPhases = (
 				DA25DB7223E1899F00AF5385 /* Sources */,
 				DA25DB7323E1899F00AF5385 /* Frameworks */,
@@ -143,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = performace;
+			name = performance;
 			productName = performace;
-			productReference = DA25DB7623E1899F00AF5385 /* performace.app */;
+			productReference = DA25DB7623E1899F00AF5385 /* performance.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA25DB8B23E189A100AF5385 /* performaceTests */ = {
+		DA25DB8B23E189A100AF5385 /* performanceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA25DBA323E189A100AF5385 /* Build configuration list for PBXNativeTarget "performaceTests" */;
+			buildConfigurationList = DA25DBA323E189A100AF5385 /* Build configuration list for PBXNativeTarget "performanceTests" */;
 			buildPhases = (
 				DA25DB8823E189A100AF5385 /* Sources */,
 				DA25DB8923E189A100AF5385 /* Frameworks */,
@@ -161,14 +164,14 @@
 			dependencies = (
 				DA25DB8E23E189A100AF5385 /* PBXTargetDependency */,
 			);
-			name = performaceTests;
+			name = performanceTests;
 			productName = performaceTests;
-			productReference = DA25DB8C23E189A100AF5385 /* performaceTests.xctest */;
+			productReference = DA25DB8C23E189A100AF5385 /* performanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA25DB9623E189A100AF5385 /* performaceUITests */ = {
+		DA25DB9623E189A100AF5385 /* performanceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA25DBA623E189A100AF5385 /* Build configuration list for PBXNativeTarget "performaceUITests" */;
+			buildConfigurationList = DA25DBA623E189A100AF5385 /* Build configuration list for PBXNativeTarget "performanceUITests" */;
 			buildPhases = (
 				DA25DB9323E189A100AF5385 /* Sources */,
 				DA25DB9423E189A100AF5385 /* Frameworks */,
@@ -179,9 +182,9 @@
 			dependencies = (
 				DA25DB9923E189A100AF5385 /* PBXTargetDependency */,
 			);
-			name = performaceUITests;
+			name = performanceUITests;
 			productName = performaceUITests;
-			productReference = DA25DB9723E189A100AF5385 /* performaceUITests.xctest */;
+			productReference = DA25DB9723E189A100AF5385 /* performanceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA25DB7123E1899F00AF5385 /* Build configuration list for PBXProject "performace" */;
+			buildConfigurationList = DA25DB7123E1899F00AF5385 /* Build configuration list for PBXProject "performance" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA25DB7523E1899F00AF5385 /* performace */,
-				DA25DB8B23E189A100AF5385 /* performaceTests */,
-				DA25DB9623E189A100AF5385 /* performaceUITests */,
+				DA25DB7523E1899F00AF5385 /* performance */,
+				DA25DB8B23E189A100AF5385 /* performanceTests */,
+				DA25DB9623E189A100AF5385 /* performanceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA25DB7E23E1899F00AF5385 /* ViewController.swift in Sources */,
+				DA25DBAA23E1939700AF5385 /* RegularExpressionTestViewController.swift in Sources */,
 				DA25DB7A23E1899F00AF5385 /* AppDelegate.swift in Sources */,
 				DA25DB7C23E1899F00AF5385 /* SceneDelegate.swift in Sources */,
 			);
@@ -277,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA25DB9C23E189A100AF5385 /* performaceUITests.swift in Sources */,
+				DA25DB9C23E189A100AF5385 /* performanceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +290,12 @@
 /* Begin PBXTargetDependency section */
 		DA25DB8E23E189A100AF5385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA25DB7523E1899F00AF5385 /* performace */;
+			target = DA25DB7523E1899F00AF5385 /* performance */;
 			targetProxy = DA25DB8D23E189A100AF5385 /* PBXContainerItemProxy */;
 		};
 		DA25DB9923E189A100AF5385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA25DB7523E1899F00AF5385 /* performace */;
+			target = DA25DB7523E1899F00AF5385 /* performance */;
 			targetProxy = DA25DB9823E189A100AF5385 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -435,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62653TY97W;
 				INFOPLIST_FILE = performace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62653TY97W;
 				INFOPLIST_FILE = performace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/performace.app/performace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/performance.app/performance";
 			};
 			name = Debug;
 		};
@@ -502,7 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/performace.app/performace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/performance.app/performance";
 			};
 			name = Release;
 		};
@@ -547,7 +553,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA25DB7123E1899F00AF5385 /* Build configuration list for PBXProject "performace" */ = {
+		DA25DB7123E1899F00AF5385 /* Build configuration list for PBXProject "performance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA25DB9E23E189A100AF5385 /* Debug */,
@@ -556,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA25DBA023E189A100AF5385 /* Build configuration list for PBXNativeTarget "performace" */ = {
+		DA25DBA023E189A100AF5385 /* Build configuration list for PBXNativeTarget "performance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA25DBA123E189A100AF5385 /* Debug */,
@@ -565,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA25DBA323E189A100AF5385 /* Build configuration list for PBXNativeTarget "performaceTests" */ = {
+		DA25DBA323E189A100AF5385 /* Build configuration list for PBXNativeTarget "performanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA25DBA423E189A100AF5385 /* Debug */,
@@ -574,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA25DBA623E189A100AF5385 /* Build configuration list for PBXNativeTarget "performaceUITests" */ = {
+		DA25DBA623E189A100AF5385 /* Build configuration list for PBXNativeTarget "performanceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA25DBA723E189A100AF5385 /* Debug */,
