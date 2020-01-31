@@ -105,4 +105,12 @@ class RegularExpressionTestViewController: UIViewController, UITextFieldDelegate
         self.view.endEditing(false)
         return true;
     }
+    
+    @IBAction func onTestButtonClick(_ sender: UIButton) {
+        var webViewController = WebViewController()
+        webViewController.url = "https://github.com/bingoli"
+        self.navigationController?.pushViewController(
+        webViewController, animated: true)
+        
+    }
 }

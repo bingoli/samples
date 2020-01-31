@@ -16,6 +16,8 @@
 		DA25DB9123E189A100AF5385 /* performaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DB9023E189A100AF5385 /* performaceTests.swift */; };
 		DA25DB9C23E189A100AF5385 /* performanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DB9B23E189A100AF5385 /* performanceUITests.swift */; };
 		DA25DBAA23E1939700AF5385 /* RegularExpressionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */; };
+		DA25DBAC23E3143700AF5385 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25DBAB23E3143700AF5385 /* WebViewController.swift */; };
+		DA25DBAF23E3C05200AF5385 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA25DBAE23E3C05200AF5385 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DA25DB9B23E189A100AF5385 /* performanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceUITests.swift; sourceTree = "<group>"; };
 		DA25DB9D23E189A100AF5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpressionTestViewController.swift; sourceTree = "<group>"; };
+		DA25DBAB23E3143700AF5385 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DA25DBAE23E3C05200AF5385 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA25DBAF23E3C05200AF5385 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				DA25DB8F23E189A100AF5385 /* performanceTests */,
 				DA25DB9A23E189A100AF5385 /* performanceUITests */,
 				DA25DB7723E1899F00AF5385 /* Products */,
+				DA25DBAD23E3C05100AF5385 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +115,7 @@
 				DA25DB8423E189A000AF5385 /* LaunchScreen.storyboard */,
 				DA25DB8723E189A000AF5385 /* Info.plist */,
 				DA25DBA923E1939700AF5385 /* RegularExpressionTestViewController.swift */,
+				DA25DBAB23E3143700AF5385 /* WebViewController.swift */,
 			);
 			path = performace;
 			sourceTree = "<group>";
@@ -129,6 +136,14 @@
 				DA25DB9D23E189A100AF5385 /* Info.plist */,
 			);
 			path = performanceUITests;
+			sourceTree = "<group>";
+		};
+		DA25DBAD23E3C05100AF5385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA25DBAE23E3C05200AF5385 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +280,7 @@
 				DA25DB7E23E1899F00AF5385 /* ViewController.swift in Sources */,
 				DA25DBAA23E1939700AF5385 /* RegularExpressionTestViewController.swift in Sources */,
 				DA25DB7A23E1899F00AF5385 /* AppDelegate.swift in Sources */,
+				DA25DBAC23E3143700AF5385 /* WebViewController.swift in Sources */,
 				DA25DB7C23E1899F00AF5385 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
